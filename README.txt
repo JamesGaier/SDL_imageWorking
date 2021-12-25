@@ -1,1 +1,1 @@
-I want to use SDL_image in a ci/cd pipeline.  However, the current version of SDL_image is not functioning on my computer. I removed an if check around a flag setting position independant code.
+I want to use SDL_image https://github.com/libsdl-org/SDL_image in a ci/cd pipeline.  However, the current version of SDL_image is not functioning on my computer. I removed an if check around a flag setting position independant code.
