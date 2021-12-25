@@ -7,6 +7,8 @@ project(SDL_image C)
 # FIXME: handle library versioning.
 # FIXME: test accross different target platforms.
 
+
+
 if (NOT ANDROID AND NOT (TARGET SDL2 OR TARGET SDL2-static))
 	find_package(SDL2 REQUIRED)
 endif()
@@ -20,10 +22,7 @@ if (APPLE)
 	option(ENABLE_APPLE_IMAGEIO "Use native Mac OS X frameworks for loading images" ON)
 endif()
 
-# FIXME: ????
-if (NOT BUILD_SHARED_LIBS)
-	set(CMAKE_POSITION_INDEPENDENT_CODE ON)
-endif()
+set(CMAKE_POSITION_INDEPENDENT_CODE ON) #Removed if around this code
 
 add_library(SDL2_image)
 
